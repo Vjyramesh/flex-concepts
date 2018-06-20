@@ -41,7 +41,7 @@ body {
 .wrap-reverse {
 	flex-wrap: wrap-reverse;
 }
-.green {
+.green { 
 	background: #4CAF50;
 }
 .width-100 {

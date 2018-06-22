@@ -1,417 +1,522 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-            <title>
-                Flex Concepts
-            </title>
-            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-                <link href="css/style.css" rel="stylesheet">
-                </link>
-            </link>
-        </meta>
-    </head>
-    <body>
-        <h2>
-            Basic Flex Property
-        </h2>
-        <p>
-            Flex property which is used to achieve the responsive design without using any frontend (UI) frameworks. Flex property which was introduced in the css3 and it was supported by all the latest browerser.
-        </p>
-        <!-- Basic Flex Property -->
-        <div class="grid">
-            <div class="col green">
-                Col 1
-            </div>
-            <div class="col">
-                Col 2
-            </div>
-            <div class="col green">
-                Col 3
-            </div>
-            <div class="col">
-                Col 4
-            </div>
+
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+        Flex Concepts
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    </link>
+    </link>
+    </meta>
+</head>
+
+<body>
+    <h2>
+        Basic Flex Property
+    </h2>
+    <p>
+        Flex property which is used to achieve the responsive design without using any frontend (UI) frameworks. Flex property which
+        was introduced in the css3 and it was supported by all the latest browerser.
+    </p>
+    <!-- Basic Flex Property -->
+    <div class="grid">
+        <div class="col green">
+            Col 1
         </div>
-        <!-- Basic Flex Property -->
-        <!-- Flex property Direction -->
-        <h2>
-            Flex property direction
-        </h2>
-        <p>
-            Flex Direction Property which is for achiveing the direction of the columns. How the columns should flow.
-        Its has 4 property.
-        </p>
-        <p>
-            <strong>
-                1. ROW (Default)
-            </strong>
-            : This is the default property which flows from left to right(ltr). Main it flows in the x - direction
-        </p>
-        <p>
-            <strong>
-                2. ROW-REVERSE
-            </strong>
-            :  This property which is used to flow from right to left(rtl). This flows in the x - direction
-        </p>
-        <p>
-            <strong>
-                3. COLUMN
-            </strong>
-            : This property which is used to flow from top to bottom. All the columns inside the flex container will start from top and end at the bottom.
-        </p>
-        <p>
-            <strong>
-                4. COLUMN-REVERSE
-            </strong>
-            : This property which is used to flow from bottom to top. All the columns inside the flex container will start from bottom and end at the top.
-        </p>
-        <h4>
-            Row Direction (default)
-        </h4>
-        <!-- Flex Direction -->
-        <div class="grid">
-            <div class="flex">
-                <div class="grid flex-direction">
-                    <div class="col green">
-                        Col 1
-                    </div>
-                    <div class="col">
-                        Col 2
-                    </div>
-                    <div class="col green">
-                        Col 3
-                    </div>
-                    <div class="col">
-                        Col 4
-                    </div>
+        <div class="col">
+            Col 2
+        </div>
+        <div class="col green">
+            Col 3
+        </div>
+        <div class="col">
+            Col 4
+        </div>
+    </div>
+    <!-- Basic Flex Property -->
+    <!-- Flex property Direction -->
+    <h2>
+        Flex property direction
+    </h2>
+    <p>
+        Flex Direction Property which is for achiveing the direction of the columns. How the columns should flow. Its has 4 property.
+    </p>
+    <p>
+        <strong>
+            1. ROW (Default)
+        </strong>
+        : This is the default property which flows from left to right(ltr). Main it flows in the x - direction
+    </p>
+    <p>
+        <strong>
+            2. ROW-REVERSE
+        </strong>
+        : This property which is used to flow from right to left(rtl). This flows in the x - direction
+    </p>
+    <p>
+        <strong>
+            3. COLUMN
+        </strong>
+        : This property which is used to flow from top to bottom. All the columns inside the flex container will start from top and
+        end at the bottom.
+    </p>
+    <p>
+        <strong>
+            4. COLUMN-REVERSE
+        </strong>
+        : This property which is used to flow from bottom to top. All the columns inside the flex container will start from bottom
+        and end at the top.
+    </p>
+    <h4>
+        Row Direction (default)
+    </h4>
+    <!-- Flex Direction -->
+    <div class="grid">
+        <div class="flex">
+            <div class="grid flex-direction">
+                <div class="col green">
+                    Col 1
                 </div>
-            </div>
-            <div class="flex">
-                <div class="grid">
-                    <ul>
-                        <li>
-                            <label>
-                                <input checked="checked" name="flex-direction" onchange="flexOption('flex-direction','row')" type="radio" value="row">
-                                    Row( Default )
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="flex-direction" onchange="flexOption('flex-direction','row-reverse')" type="radio" value="row-reverse">
-                                    Row Reverse
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="flex-direction" onchange="flexOption('flex-direction','column')" type="radio" value="column">
-                                    Column
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="flex-direction" onchange="flexOption('flex-direction','column-reverse')" type="radio" value="column-reverse">
-                                    Column Reverse
-                                </input>
-                            </label>
-                        </li>
-                    </ul>
+                <div class="col">
+                    Col 2
+                </div>
+                <div class="col green">
+                    Col 3
+                </div>
+                <div class="col">
+                    Col 4
                 </div>
             </div>
         </div>
-        <!-- Flex Direction -->
-        <!-- Basic Flex Property -->
-     
-     
-     
-        <!-- Start of  Flex Wrap  -->
-        <h2>
-            Flex Wrap
-        </h2>
-        <p>
-            Flex Wrap is a property which will wrap the columns to the next row which are going out of the flex container. It has three options.
-        </p>
-        <p>
-            <strong>
-                1. NOWRAP
-            </strong>
-            : No wrap will not wrap the columns to the next row. It will try to adjust all the columns in a single row.
-        </p>
-        <p>
-            <strong>
-                2. WRAP
-            </strong>
-            : Wrap will used to wrap the columns to the next row which columns are going out of the flex container.
-        </p>
-        <p>
-            <strong>
-                3. WRAP-REVERSE
-            </strong>
-            : Wrap Reverse which is similar to the wrap property but wrap will happen in the reverse order.
-        </p>
-        <h4>
-            Flex Nowrap(default)
-        </h4>
-        <p>
-            By default flex property tries to fit all the columns in a single row.
-        </p>
-        <!-- Flex Wrap -->
-        <div class="grid">
-            <div class="flex">
-                <div class="grid flex-wrap">
-                    <div class="col green">
-                        Col 1
-                    </div>
-                    <div class="col">
-                        Col 2
-                    </div>
-                    <div class="col green">
-                        Col 3
-                    </div>
-                    <div class="col">
-                        Col 4
-                    </div>
-                    <div class="col green">
-                        Col 5
-                    </div>
-                    <div class="col">
-                        Col 6
-                    </div>
-                    <div class="col green">
-                        Col 7
-                    </div>
-                    <div class="col">
-                        Col 8
-                    </div>
-                </div>
+        <div class="flex">
+            <div class="grid">
+                <ul>
+                    <li>
+                        <label>
+                            <input checked="checked" name="flex-direction" onchange="flexOption('flex-direction','row')" type="radio" value="row"> Row( Default )
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="flex-direction" onchange="flexOption('flex-direction','row-reverse')" type="radio" value="row-reverse"> Row Reverse
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="flex-direction" onchange="flexOption('flex-direction','column')" type="radio" value="column"> Column
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="flex-direction" onchange="flexOption('flex-direction','column-reverse')" type="radio" value="column-reverse"> Column Reverse
+                            </input>
+                        </label>
+                    </li>
+                </ul>
             </div>
-            <div class="flex">
-                <div class="grid">
-                    <ul>
-                        <li>
-                            <label>
-                                <input checked="checked" name="flex-wrap" onchange="flexOption('flex-wrap','nowrap')" type="radio" value="nowrap">
-                                    No wrap( Default )
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="flex-wrap" onchange="flexOption('flex-wrap','wrap')" type="radio" value="wrap">
-                                    Wrap
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="flex-wrap" onchange="flexOption('flex-wrap','wrap-reverse')" type="radio" value="wrap-reverse">
-                                    Wrap Reverse
-                                </input>
-                            </label>
-                        </li>
-                    </ul>
+        </div>
+    </div>
+    <!-- Flex Direction -->
+    <!-- Basic Flex Property -->
+
+
+
+    <!-- Start of  Flex Wrap  -->
+    <h2>
+        Flex Wrap
+    </h2>
+    <p>
+        Flex Wrap is a property which will wrap the columns to the next row which are going out of the flex container. It has three
+        options.
+    </p>
+    <p>
+        <strong>
+            1. NOWRAP
+        </strong>
+        : No wrap will not wrap the columns to the next row. It will try to adjust all the columns in a single row.
+    </p>
+    <p>
+        <strong>
+            2. WRAP
+        </strong>
+        : Wrap will used to wrap the columns to the next row which columns are going out of the flex container.
+    </p>
+    <p>
+        <strong>
+            3. WRAP-REVERSE
+        </strong>
+        : Wrap Reverse which is similar to the wrap property but wrap will happen in the reverse order.
+    </p>
+    <h4>
+        Flex Nowrap(default)
+    </h4>
+    <p>
+        By default flex property tries to fit all the columns in a single row.
+    </p>
+    <!-- Flex Wrap -->
+    <div class="grid">
+        <div class="flex">
+            <div class="grid flex-wrap">
+                <div class="col green">
+                    Col 1
+                </div>
+                <div class="col">
+                    Col 2
+                </div>
+                <div class="col green">
+                    Col 3
+                </div>
+                <div class="col">
+                    Col 4
+                </div>
+                <div class="col green">
+                    Col 5
+                </div>
+                <div class="col">
+                    Col 6
+                </div>
+                <div class="col green">
+                    Col 7
+                </div>
+                <div class="col">
+                    Col 8
                 </div>
             </div>
         </div>
-        <!-- flex wrap -->
-        <!-- Start of flex wrap -->
-        <h4>
-            Flex flow
-        </h4>
-        <p>
-            Flex flow is the shortand property of flex wrap and flex direction.
-        </p>
-        <pre>
+        <div class="flex">
+            <div class="grid">
+                <ul>
+                    <li>
+                        <label>
+                            <input checked="checked" name="flex-wrap" onchange="flexOption('flex-wrap','nowrap')" type="radio" value="nowrap"> No wrap( Default )
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="flex-wrap" onchange="flexOption('flex-wrap','wrap')" type="radio" value="wrap"> Wrap
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="flex-wrap" onchange="flexOption('flex-wrap','wrap-reverse')" type="radio" value="wrap-reverse"> Wrap Reverse
+                            </input>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- flex wrap -->
+    <!-- Start of flex wrap -->
+    <h4>
+        Flex flow
+    </h4>
+    <p>
+        Flex flow is the shortand property of flex wrap and flex direction.
+    </p>
+    <pre>
 			<code>
 				flex-flow: [direction] [wrap];
 			</code>
 		</pre>
-        <h2>
-            Justify Content
-        </h2>
-        <p>
-            <strong>
-                1. FLEX-START
-            </strong>
-            : This is used to start the columns from the left. This is the default property. Similar to
-            <strong>
-                float: left
-            </strong>
-        </p>
-        <p>
-            <strong>
-                2. FLEX-END
-            </strong>
-            : This is used to end the columns in the right. So starting of the column is not in the left. But based on the number of columns it will start the position. Similar to
-            <strong>
-                float: right
-            </strong>
-        </p>
-        <p>
-        	<strong>3. CENTER</strong>
-        	: This is used to align all the columns to the center.
-        </p>
-        <p>
-        	<strong>4. SPACE BETWEEN</strong>
-        	: This is used to give a  space in between the columns. But not the first and last columns.
-        </p>
-        <p>
-        	<strong>5. SPACE AROUND</strong>
-        	: This is used to give a space in between the columns which also includes the first and last columns.
-        </p>
-        <!-- Justify Content -->
-        <div class="grid">
-            <div class="flex">
-                <div class="grid justify-content">
-                    <div class="col green width-100">
-                        Col 1
-                    </div>
-                    <div class="col width-100">
-                        Col 2
-                    </div>
-                    <div class="col green width-100">
-                        Col 3
-                    </div>
-                    <div class="col width-100">
-                        Col 4
-                    </div>
+    <h2>
+        Justify Content
+    </h2>
+    <p>
+        <strong>
+            1. FLEX-START
+        </strong>
+        : This is used to start the columns from the left. This is the default property. Similar to
+        <strong>
+            float: left
+        </strong>
+    </p>
+    <p>
+        <strong>
+            2. FLEX-END
+        </strong>
+        : This is used to end the columns in the right. So starting of the column is not in the left. But based on the number of
+        columns it will start the position. Similar to
+        <strong>
+            float: right
+        </strong>
+    </p>
+    <p>
+        <strong>3. CENTER</strong>
+        : This is used to align all the columns to the center.
+    </p>
+    <p>
+        <strong>4. SPACE BETWEEN</strong>
+        : This is used to give a space in between the columns. But not the first and last columns.
+    </p>
+    <p>
+        <strong>5. SPACE AROUND</strong>
+        : This is used to give a space in between the columns which also includes the first and last columns.
+    </p>
+    <!-- Justify Content -->
+    <div class="grid">
+        <div class="flex">
+            <div class="grid justify-content">
+                <div class="col green width-100">
+                    Col 1
                 </div>
-            </div>
-            <div class="flex">
-                <div class="grid">
-                    <ul>
-                        <li>
-                            <label>
-                                <input checked="checked" name="justify-content" onchange="flexOption('justify-content', 'flex-start')" type="radio" value="justify-content">
-                                    Flex Start (Default)
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="justify-content" onchange="flexOption('justify-content', 'flex-end')" type="radio" value="justify-content">
-                                    Flex End
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="justify-content" onchange="flexOption('justify-content', 'center')" type="radio" value="justify-content">
-                                    Center
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="justify-content" onchange="flexOption('justify-content', 'space-between')" type="radio" value="justify-content">
-                                    Space Between
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="justify-content" onchange="flexOption('justify-content', 'space-around')" type="radio" value="justify-content">
-                                    Space Around
-                                </input>
-                            </label>
-                        </li>
-                    </ul>
+                <div class="col width-100">
+                    Col 2
+                </div>
+                <div class="col green width-100">
+                    Col 3
+                </div>
+                <div class="col width-100">
+                    Col 4
                 </div>
             </div>
         </div>
-        <!-- Justify Content -->
+        <div class="flex">
+            <div class="grid">
+                <ul>
+                    <li>
+                        <label>
+                            <input checked="checked" name="justify-content" onchange="flexOption('justify-content', 'flex-start')" type="radio" value="justify-content"> Flex Start (Default)
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="justify-content" onchange="flexOption('justify-content', 'flex-end')" type="radio" value="justify-content"> Flex End
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="justify-content" onchange="flexOption('justify-content', 'center')" type="radio" value="justify-content"> Center
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="justify-content" onchange="flexOption('justify-content', 'space-between')" type="radio" value="justify-content"> Space Between
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="justify-content" onchange="flexOption('justify-content', 'space-around')" type="radio" value="justify-content"> Space Around
+                            </input>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Justify Content -->
 
 
-                <h2>
-                     Align Items
-                </h2>
-                <p>
-                    <strong>
-                        1. STRETCH
-                    </strong>
-                    : This is used to make all the columns inside the flex of same height irrespective of their content inside the div. This is the default property.
-                </p>
-                <p>
-                    <strong>
-                        2. FLEX-START
-                    </strong>
-                    : This is used to start the columns from the top but height of the div will be based on their content.
-                </p>
-                <p>
-                    <strong>
-                        3. FLEX-END
-                    </strong>
-                    : This is used to end the columns in the bottom but height of the div will be based on their content
-                </p>
-                <p>
-                    <strong>4. CENTER</strong>
-                    : This is used to align all the columns to the center vertically, height will remain based on their content.
-                </p>
-                <p>
-                    <strong>4. BASELINE</strong>
-                    : This is used to align all the columns based on their content end line  inside the div.
-                </p>
+    <h2>
+        Align Items
+    </h2>
+    <p>
+        <strong>
+            1. STRETCH
+        </strong>
+        : This is used to make all the columns inside the flex of same height irrespective of their content inside the div. This
+        is the default property.
+    </p>
+    <p>
+        <strong>
+            2. FLEX-START
+        </strong>
+        : This is used to start the columns from the top but height of the div will be based on their content.
+    </p>
+    <p>
+        <strong>
+            3. FLEX-END
+        </strong>
+        : This is used to end the columns in the bottom but height of the div will be based on their content
+    </p>
+    <p>
+        <strong>4. CENTER</strong>
+        : This is used to align all the columns to the center vertically, height will remain based on their content.
+    </p>
+    <p>
+        <strong>4. BASELINE</strong>
+        : This is used to align all the columns based on their content end line inside the div.
+    </p>
 
-        <!-- Align Items -->
-        <div class="grid">
-            <div class="flex">
-                <div class="grid align-items" style="align-items: stretch">
-                    <div class="col green width-100" style="line-height: 30px;">
-                        Col 1
-                    </div>
-                    <div class="col width-100" style="line-height: 40px">
-                        Col 2
-                    </div>
-                    <div class="col green width-100" >
-                        Col 3
-                    </div>
-                    <div class="col width-100" style="line-height: 70px">
-                        Col 4
-                    </div>
+    <!-- Align Items -->
+    <div class="grid">
+        <div class="flex">
+            <div class="grid align-items" style="align-items: stretch">
+                <div class="col green width-100" style="line-height: 30px;">
+                    Col 1
+                </div>
+                <div class="col width-100" style="line-height: 40px">
+                    Col 2
+                </div>
+                <div class="col green width-100">
+                    Col 3
+                </div>
+                <div class="col width-100" style="line-height: 70px">
+                    Col 4
                 </div>
             </div>
-            <div class="flex">
-                <div class="grid">
-                    <ul>
-
-                        <li>
-                            <label>
-                                <input  checked="checked" name="align-items" onchange="flexOption('align-items', 'stretch')" type="radio" value="align-items"> Stretch (Default)
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="align-items" onchange="flexOption('align-items', 'flex-start')" type="radio" value="align-items"> Flex Start</input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="align-items" onchange="flexOption('align-items', 'flex-end')" type="radio" value="align-items"> Flex End
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="align-items" onchange="flexOption('align-items', 'center')" type="radio" value="align-items"> Center
-                                </input>
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input name="align-items" onchange="flexOption('align-items', 'baseline')" type="radio" value="align-items"> Baseline
-                                </input>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-            </div> 
         </div>
-        <!-- Align Items -->
-        <script src="./js/script.js" type="text/javascript">
-        </script>
-    </body>
+        <div class="flex">
+            <div class="grid">
+                <ul>
+
+                    <li>
+                        <label>
+                            <input checked="checked" name="align-items" onchange="flexOption('align-items', 'stretch')" type="radio" value="align-items"> Stretch (Default)
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="align-items" onchange="flexOption('align-items', 'flex-start')" type="radio" value="align-items"> Flex Start</input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="align-items" onchange="flexOption('align-items', 'flex-end')" type="radio" value="align-items"> Flex End
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="align-items" onchange="flexOption('align-items', 'center')" type="radio" value="align-items"> Center
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="align-items" onchange="flexOption('align-items', 'baseline')" type="radio" value="align-items"> Baseline
+                            </input>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Align Items -->
+
+<h2>
+    Align Content
+</h2>
+<p>
+    <strong>
+        1. STRETCH
+    </strong>
+ : Lines stretch to take up the remaining space. This
+    is the default property.
+</p>
+<p>
+    <strong>
+        2. FLEX-START
+    </strong>
+ : Lines packed to the start of the container.
+</p>
+<p>
+    <strong>
+        3. FLEX-END
+    </strong>
+ : Lines packed to the end of the container
+</p>
+<p>
+    <strong>4. CENTER</strong>
+ : Lines packed to the center of the container
+</p>
+<p>
+    <strong>4. SPACE BETWEEN</strong>
+ : Lines evenly distributed; the first line is at the start of the container while the last one is at the end
+</p>
+<p>
+    <strong>4. SPACE AROUND</strong>
+ : Lines evenly distributed with equal space around each line
+</p>
+    <!-- Align Content -->
+    <div class="grid">
+        <div class="flex">
+            <div class="grid align-content">
+                <div class="col green width-100">
+                    Col 1
+                </div>
+                <div class="col width-100">
+                    Col 2
+                </div>
+                <div class="col green width-100">
+                    Col 3
+                </div>
+                <div class="col width-100">
+                    Col 4
+                </div>
+                <div class="col green width-100">
+                    Col 5
+                </div>
+                <div class="col width-100">
+                    Col 6
+                </div>
+                <div class="col green width-100">
+                    Col 7
+                </div>
+                <div class="col width-100">
+                    Col 8
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="grid">
+                <ul>
+
+                    <li>
+                        <label>
+                            <input checked="checked" name="align-content" onchange="flexOption('align-content', 'stretch')" type="radio" value="align-content"> Stretch (Default)
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="align-content" onchange="flexOption('align-content', 'flex-start')" type="radio" value="align-content"> Flex Start</input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="align-content" onchange="flexOption('align-content', 'flex-end')" type="radio" value="align-content"> Flex End
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="align-content" onchange="flexOption('align-content', 'center')" type="radio" value="align-content"> Center
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="align-content" onchange="flexOption('align-content', 'space-between')" type="radio" value="space-between"> Space Between
+                            </input>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="align-content" onchange="flexOption('align-content', 'space-around')" type="radio" value="space-around"> Space Around
+                            </input>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Align Content -->
+    <script src="./js/script.js" type="text/javascript">
+    </script>
+</body>
+
 </html>
